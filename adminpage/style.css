@@ -1,0 +1,231 @@
+body {
+margin:5px; /* - отступ от внешних границ - */
+}
+ul{
+  list-style-type: none;
+}
+hr#hrtextunder {
+  margin-bottom:50px;
+  
+  border-top-color:#000;
+  text-align: left;
+  position: relative;
+  
+
+}
+#profile {
+  text-align: center;
+  font-size: 24px;
+}
+#profimg {
+  border: 1px solid #000;
+  border-radius: 150px;
+  width:150px; height:150px; 
+}
+#table-2 {
+  margin-left: 20px;
+  margin-right: 10px;
+}
+.header {
+	margin-left:5px;
+	margin-top:5px;
+}
+.logoimg {
+	width:306px;
+	height: 95px;
+ 	margin:5px 5px 10px 5px;
+ 	
+}
+#menunav {
+  
+
+}
+#hrfooter {
+  width:100%;
+  margin-top:10%;
+  border-top-color:#000;
+  text-align: center;
+  position: relative;
+  
+
+}
+#footer {
+  text-align: center;
+  font-size: 20px;
+  
+}
+#menuborder {
+
+  border-right: 1px solid #000;
+
+}
+#content {
+  margin: 20px 20px 20px 20px 
+}
+#margintopmenu {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 24px;
+}
+.username {
+	margin-top:10px;
+	text-align: left;
+	font-size: 20px;
+  margin-left: 10%;
+}
+.textbox {
+	text-align: center;
+	font-size: 20px;
+
+
+}
+.menuform {
+  margin-right:10px;
+	display:none;
+  text-align: left;
+	width:100px;
+}
+
+.gohome {
+  width: 75px;
+  height: 25px;
+  border: 1px solid #000;
+  text-align: center;
+  background-color: transparent;
+}
+.gohome:hover {
+  border: 1px solid #17BCF0;
+}
+  .logout {
+    margin-top: 3px;
+  width: 75px;
+  height: 25px;
+  border: 1px solid #000;
+  text-align: center;
+  background-color: transparent;
+  
+  }
+  .logout:hover {
+  border: 1px solid #17BCF0;
+}
+  form.menuf {
+    margin-top: 10px;
+  }
+a {
+  text-decoration: none;
+  color :#000;
+
+}
+a:hover {
+  color: #17BCF0;
+}
+.menubox {
+width: 50px;
+height: 50px;
+border: 1px solid #000;
+margin-top: 10px;
+margin-right: 3px;
+border-radius: 2px;
+box-shadow: -2px 6px 10px 2px rgba(0, 0, 0, 0.8);
+background-color: rgba(255, 255, 255, 0);
+}
+hr#hrusername {
+	border-top-color:#000;
+  text-align: left;
+  position: relative;
+  margin-left: 1;
+}
+hr#hrmenunav {
+  border-top-color:#000;
+  text-align: left;
+  position: relative;
+  margin-left: 1;
+}
+
+img {
+	border: none;
+}
+.imgmenu {
+	margin-top:7px;
+
+}
+#settingsimg {
+  margin-top:1.5px;
+  margin-right: 2px;
+
+}
+a.setting {
+  vertical-align: top;
+}
+.settings {
+   text-align: right;
+   vertical-align: top;
+}
+@-webkit-keyframes pulse {
+  25% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+
+  75% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+
+@keyframes pulse {
+  25% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+
+  75% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+
+.pulse {
+  display: inline-block;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+}
+.pulse:hover, .pulse:focus, .pulse:active {
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  border-color: #17BCF0;
+  box-shadow: -2px 6px 10px 2px rgba(11, 133, 163, 0.69)
+}
+.pulse1:hover, .pulse1:focus, .pulse1:active {
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  
+  
+}
+
+.formattr {
+  margin-top:20px;
+  font-size: 22px;
+  text-align: right;
+
+}
+.formattr_main {
+  margin-top:20px;
+  font-size: 18px;
+  
+
+}
+
+
