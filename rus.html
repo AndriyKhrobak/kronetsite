@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+   
+    <meta charset="utf-8">
+    <title>Kronet Games</title>
+<link href='http://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+
+<link rel="apple-touch-icon" href="art/kronet.png" />
+    <link rel="icon" href="art/kronet.png">
+    <link rel="shortcut icon" href="images/kronet.png" />
+    <link rel="stylesheet" href="css/stylelang.css">
+    <link rel="stylesheet" href="css/camera.css">
+    <link rel="stylesheet" href="css/form.css">
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-migrate-1.1.1.js"></script>
+    <script src="js/superfish.js"></script>
+    <script src="js/forms.js"></script>
+    <script src="js/jquery.ui.totop.js"></script>
+    <script src="js/jquery.equalheights.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.ui.totop.js"></script>
+    <script src="js/tms-0.4.1.js"></script>
+    <script type="text/javascript">
+    $(function(){
+ $('.hidescreen, .load_page').fadeIn(10); //показывает фон и индикатор
+ $(window).load(function() {
+  $('.hidescreen,.load_page').fadeOut(500); //скрывает, после загрузки страницы
+ });
+ 
+});
+    </script>
+   <script>
+      $(document).ready(function(){
+        $('.slider_wrapper')._TMS({
+          show:0,
+          pauseOnHover:false,
+          prevBu:'.prev',
+          nextBu:'.next',
+          playBu:false,
+          duration:800,
+          preset:'fade',
+          pagNums:false,
+          slideshow:8000,
+          numStatus:false,
+          banners: 'fade',
+          waitBannerAnimation:false,
+          progressBar:false
+        });
+      });
+      $(document).ready(function(){
+        !function(){
+      var map=[]
+       ,names=[]
+       ,win=$(window)
+       ,header=$('header')
+       ,currClass
+      $('.content').each(function(n){
+       map[n]=this.offsetTop
+       names[n]=$(this).attr('id')
+      })
+      win
+       .on('scroll',function(){
+        var i=0
+        while(map[i++]<=win.scrollTop());
+        if(currClass!==names[i-2])
+        currClass=names[i-2]
+        header.removeAttr("class").addClass(names[i-2])
+       })
+      }(); });
+          function goToByScroll(id){
+        $('html,body').animate({scrollTop: $("#"+id).offset().top},'slow');
+        }
+        $(document).ready(function(){
+          $().UItoTop({ easingType: 'easeOutQuart' });
+        });
+    </script>
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-54516163-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+ </head>
+         <body >
+          <div class='load_page'>
+ <img src="./art/loading.gif" /> <!--картинка индикатора загрузки-->
+</div>
+<div class='hidescreen'></div>
+      <!--==============================header=================================-->
+          <header class="page1">
+             
+            <div class="container_12header">
+              <!--  <div id="usermenuimg" > <img src="./art/kronet.png" width="35px" height="35px"  /> -->
+
+              <div class="grid_12_header">
+                
+              <h1 id="logokron">
+  <a href="ukr.html"><img src="art/ukr.png" width="24px" height="24px" style="
+    float: left;
+    margin-top: 5%;
+  "></a>
+  <a href="index.html"><img src="art/usa.png" width="24px" height="24px" style="
+    float: left;
+    margin-top: 5%;
+  "></a><a href="rus.html"><img src="art/rus.png" width="24px" height="24px" style="
+    float: left;
+    margin-right: 7%;
+    margin-top: 5%;
+  "></a><a href="#" onclick="goToByScroll('page1'); return false;" id="h1logo" style="
+    margin-left: 20%;
+"><img src="art/logo2.png" alt="" class="logo2"></a></h1>
+                <div class="menu_block">
+                  <nav class="">
+                    <ul class="sf-menu">
+                      <li class="current men"><a onClick="goToByScroll('page1'); return false;" href="#">Главная </a> <strong class="hover"></strong></li>
+                      <li class="men1"><a onClick="goToByScroll('page2'); return false;" href="#">Наши игры</a><strong class="hover"></strong></li>
+                      <li class=" men2"><a onClick="goToByScroll('page3'); return false;" href="#">Блог</a> <strong class="hover"></strong></li>
+                      <li class=" men3"><a onClick="goToByScroll('page4'); return false;" href="#">Команда</a> <strong class="hover"></strong></li>
+                      <li class=" men4"><a onClick="goToByScroll('page5'); return false;" href="#">Контакты</a> <strong class="hover"></strong></li>
+                      <li class=" men5"><a  onClick="goToByScroll('page5'); return false;" href="#" >О нас</a> <strong class="hover"></strong></li>
+                    </ul>
+                  </nav>
+                  <div class="clear"></div>
+                </div>
+              </div>
+              <div id="usermenuimg" align="right" ><a  href="./adminpage/user.html" alt="Click to login"> <img src="art/kronet1.png" width="65px" height="44px" alt="Click to login" ></a></div>
+              <div class="clear"></div>
+              
+
+            </div>
+            </div>
+          </header>
+      <!--=======content================================-->
+      <!--=======Page 1================================-->
+          <div id="page1" class="content">
+                <!--<audio autoplay>
+                  
+                  <source src="audio/audio.mp3" type="audio/mp3">
+                  
+    
+                </audio> -->
+            <div class="ic"></div>
+            <div class="container_12">
+              <div class="grid_12">
+               
+
+                <div class="slider_wrapper">
+                  <ul class="items">
+                    <li>
+                      <img src="images/spacer.gif" alt="">
+                      <div class="caption banner">
+                        <div id="word1" >Kronet Games</div>
+                      </div>
+                    </li>
+                    <li>
+                      <img src="images/spacer.gif" alt="">
+                      <div class="caption banner">
+                         <div id="word2" >Indie game development studio   </div>
+                      </div>
+                    </li>
+                    <li>
+                      <img src="images/spacer.gif" alt="">
+                      <div class="caption banner">
+                         <div id="word3" >Welcome to official home of Kronet Games</div>
+                      </div>
+                    </li>
+                    <li>
+                      <img src="images/spacer.gif" alt="">
+                      <div class="caption banner">
+                         <div id="word4" >Our mission - to create a truly unique,<br> fun and high quality mobile games.</div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="socials">
+                  <a href="https://www.facebook.com/kronetgames" target="_blank" ></a>
+                  <a href="https://vk.com/kronetgames" target="_blank"></a>
+                  <a href="http://www.youtube.com/channel/UCrYGhZOL7wd-UTSLJJcPUlw" target="_blank"></a>
+                   <a href="https://twitter.com/kronetgames" target="_blank"></a>
+                  
+                </div>
+            
+            </div>
+              
+            <a id="arrow-bottom" href="#page2" ><img id="arrowbtm" src="images/arrows-down.png" ></img></a>
+            </div>
+          </div>
+            <!--=======page 2================================-->
+            <div id="page2" class="content">
+            <div class="container_12">
+              <div class="grid_12" >
+                    <div id="game1">
+                      <div id="title">Тренируйте свою логику с прекрасной головоломкой <a href="/games/lines.html" target="_blank"> <div id="gametitle"><b>Logic Lines! </b></div> </a> </div>
+                      
+                      <table  height="400px" id="content">
+                        <tr>
+                          <td id="imggame">
+                            <iframe width="460" height="260" src="//www.youtube.com/embed/mehLjU6lPSg" frameborder="0" allowfullscreen></iframe> 
+                          </td>
+                          <td >
+                                <p id="contpost"><b>Logic Lines – это бесплатная тактическая головоломка , ориентирована на мультиплеер . В которой нет аналогов в мобильных игровых магазинах ! Соревнуйтесь с игроками со всего мира благодаря современному кросплатформенных мультиплеера и станьте Королем Логики ! Тренируйтесь в аркадном режиме протии АИ или веселитесь с друзьями в игре на одном экране - это ваш выбор ...
+</b></p>
+<div class="btn_readmore_games">
+                     <a href="/games/lines.html" target="_blank"><b>Читать больше</b> </a> </div>
+                          </td>
+                          <td id="arrowright" >
+                             <!-- <img src="./images/arrowright.png"  width="64px" height="64px" id="arrowrightimg1" /> -->
+                          </td>
+                        </tr>
+                            <tr><td colspan="3"> <p id="letsplay"><b>Потренируй свой мозг :</b></p></td></tr>
+                        <tr>
+                              <td colspan="3" height="80px">
+                                  <div class="imgdownload">
+                                    <a href="https://play.google.com/store/apps/details?id=com.kronetgames.logiclines" target="_blank" id="gamelink"><img src="./art/google.png" width="199px" height="80px" id="imgdownload_nb"/></a>
+                                    <a href="https://itunes.apple.com/app/logic-lines-free-multiplayer/id915338483" target="_blank" id="gamelink"> <img 
+                                      src="./art/app.png" width="199px" height="80px" id="imgdownload_nb"/></a>
+                                     <a href="http://www.windowsphone.com/ru-ru/store/app/logic-lines-board-puzzle-game/d20ffeee-0d4e-4abe-a279-7575ad3d542b" target="_blank" id="gamelink"><img src="./art/win.png" width="199px" height="80px" id="imgdownload_nb"/></a>
+                                </div>
+                              </td>
+                        </tr>
+                      </table>
+                      
+                  </div>
+              </div>
+               
+            </div>
+          </div>
+          <!--=======page 2================================-->
+      <!--=======page 3================================-->
+          <div id="page3" class="content">
+            <div class="container_12">
+              <div class="grid_12" id="gridblog">
+                <div class="slogan">
+                  <h3>Наш блог</h3>
+                </div>
+              </div>
+              <div class="grid_3">
+                <div class="box maxheight1">
+                  <img src="images/box1_img1.png" alt="">
+                  <div class="text1"><a href="/posts/posts.html#post1" target="_blank"><p><b>Апдейт 1.1 для Logic Lines</b></p></a></div>  
+                  <div id="textblog"><p><b>Привет , друзья ! У нас есть хорошие новости сегодня! 7 дней назад мы выпустили наши новые игры: Логические линии - Мультиплеер Рада игра - головоломка . И теперь мы работаем на глобальном обновлении 1.1 , которое исправит много ошибок ... </p></b></div>
+                  <div class="btn_readmore">
+                     <a href="/posts/posts.html#post1" target="_blank"><b>Читать больше</b> </a> </div>
+                  </div>
+              </div>
+              <div class="grid_3">
+                <div class="box maxheight1">
+                  <img src="images/box1_img2.png" alt="">
+                  <div class="text1"><a href="/posts/posts.html" target="_blank"><p><b>Обзор патча  1.1</p></b> </a></div>
+                  <div id="textblog"><p><b>
+                    Привет , друзья ! У нас есть хорошие новости сегодня! 7 дней назад мы выпустили наши новые игры: Логические линии - Мультиплеер Рада игра - головоломка . И теперь мы работаем на глобальном обновлении 1.1 , который будет исправить много ошибок...
+                  </p></b>
+                  </div>
+                   <div class="btn_readmore">
+                <a href="/posts/posts.html" target="_blank"><b>Читать больше</b> </a> </div>
+                </div>
+              </div>
+                <div class="grid_3">
+                <div class="box maxheight1">
+                  <img src="images/box1_img2.png" alt="">
+                  <div class="text1"><a href="/posts/posts.html" target="_blank"><p><b>Обзор патча 1.1</p></b> </a></div>
+                  <div id="textblog"><p><b>
+                     Привет , друзья ! У нас есть хорошие новости сегодня! 7 дней назад мы выпустили наши новые игры: Логические линии - Мультиплеер Рада игра - головоломка . И теперь мы работаем на глобальном обновлении 1.1 , который будет исправить много ошибок...
+                  </p></b>
+                  </div>
+                   <div class="btn_readmore">
+                <a href="/posts/posts.html" target="_blank"><b>Читать больше</b> </a> </div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+          <!--==============================Page3=================================-->
+         <div id="page4" class="content">
+      <div class="container_12">
+        <div class="grid_12">
+          <div id="title">Только профессиональное программирование для <a href="#" target="_blank"> <div id="gametitle"><b>Наших игр </b></div> </a> </div>
+        <div class="grid_3 margin">
+          <div class="box1 maxheight">
+            <img src="images/person1.jpg" alt="">
+            <div class="text2"><a href="#"> Вадим Кузнецов</a></div>
+            <div class="position">  Директор и звуко-инженер стартапу KRONET </div>
+            <div class="socials1">
+              <a href="#" ><img src="./images/fbsocials.png" width="32px" height="32px" id="imgsocial" ></a>
+              <a href="#" ><img src="./images/insocials.png" width="32px" height="32px" id="imgsocial" ></a>
+              <a href="#" ><img src="./images/gsocials.png" width="32px" height="32px" id="imgsocial" ></a>
+            </div>
+          </div>
+        </div>
+        <div class="grid_3 margin">
+          <div class="box1 maxheight">
+            <img src="images/person2.jpg" alt="">
+            <div class="text2"><a href="#">Артур Тодеренчук</a></div>
+             <div class="position"> Главный дизайнер и создатель идей </div>
+           <div class="socials1">
+              <a href="#" ><img src="./images/fbsocials.png" width="32px" height="32px" id="imgsocial" ></a>
+              <a href="#" ><img src="./images/insocials.png" width="32px" height="32px" id="imgsocial" ></a>
+              <a href="#" ><img src="./images/gsocials.png" width="32px" height="32px" id="imgsocial" ></a>
+            </div>
+          </div>
+        </div>
+        <div class="grid_3 margin">
+          <div class="box1 maxheight">
+            <img src="images/person3.jpg" alt="">
+            <div class="text2"><a href="#">Данило Шаповал </a></div> 
+             <div class="position">Главный программист </div>
+            <div class="socials1">
+              <a href="#" ><img src="./images/fbsocials.png" width="32px" height="32px" id="imgsocial" ></a>
+              <a href="#" ><img src="./images/insocials.png" width="32px" height="32px" id="imgsocial" ></a>
+              <a href="#" ><img src="./images/gsocials.png" width="32px" height="32px" id="imgsocial" ></a>
+            </div>
+          </div>
+        </div>
+        <div class="grid_3 margin">
+          <div class="box1 maxheight">
+            <img src="images/person4.jpg" alt="">
+            <div class="text2"><a href="#"> Ігор Бекер</a></div>
+            <div class="position"> Программист </div>
+            <div class="socials1">
+              <a href="#" ><img src="./images/fbsocials.png" width="32px" height="32px" id="imgsocial" ></a>
+              <a href="#" ><img src="./images/insocials.png" width="32px" height="32px" id="imgsocial" ></a>
+              <a href="#" ><img src="./images/gsocials.png" width="32px" height="32px" id="imgsocial" ></a>
+            </div>
+          </div>
+        </div>
+        <div class="grid_3 margin">
+          <div class="box1 maxheight">
+            <img src="images/person5.jpg" alt="">
+            <div class="text2"><a href="#">Андрій Василиця</a></div>
+             <div class="position"> Пиар-менеджер </div>
+           <div class="socials1">
+              <a href="#" ><img src="./images/fbsocials.png" width="32px" height="32px" id="imgsocial" ></a>
+              <a href="#" ><img src="./images/insocials.png" width="32px" height="32px" id="imgsocial" ></a>
+              <a href="#" ><img src="./images/gsocials.png" width="32px" height="32px" id="imgsocial" ></a>
+            </div>
+          </div>
+        </div>
+        <div class="grid_3 margin">
+          <div class="box1 maxheight">
+            <img src="images/person6.jpg" alt="">
+            <div class="text2"><a href="#">Володя Комар </a></div> 
+             <div class="position"> Пиар-менеджер </div>
+            <div class="socials1">
+              <a href="#" ><img src="./images/fbsocials.png" width="32px" height="32px" id="imgsocial" ></a>
+              <a href="#" ><img src="./images/insocials.png" width="32px" height="32px" id="imgsocial" ></a>
+              <a href="#" ><img src="./images/gsocials.png" width="32px" height="32px" id="imgsocial" ></a>
+            </div>
+          </div>
+        </div>
+         <div class="grid_3 margin">
+          <div class="box1 maxheight">
+            <img src="images/person7.jpg" alt="">
+            <div class="text2"><a href="#">Володимир Гринда </a></div> 
+             <div class="position"> Программист </div>
+            <div class="socials1">
+              <a href="#" ><img src="./images/fbsocials.png" width="32px" height="32px" id="imgsocial" ></a>
+              <a href="#" ><img src="./images/insocials.png" width="32px" height="32px" id="imgsocial" ></a>
+              <a href="#" ><img src="./images/gsocials.png" width="32px" height="32px" id="imgsocial" ></a>
+            </div>
+          </div>
+        </div>
+        <div class="grid_3 margin">
+          <div class="box1 maxheight">
+            <img src="images/person8.jpg" alt="">
+            <div class="text2"><a href="#">Хробак Андрій </a></div> 
+             <div class="position"> Веб-программист </div>
+            <div class="socials1">
+              <a href="#" ><img src="./images/fbsocials.png" width="32px" height="32px" id="imgsocial" ></a>
+              <a href="#" ><img src="./images/insocials.png" width="32px" height="32px" id="imgsocial" ></a>
+              <a href="#" ><img src="./images/gsocials.png" width="32px" height="32px" id="imgsocial" ></a>
+            </div>
+          </div>
+        </div>
+       
+      </div>
+    </div>
+  </div>
+  <div id="page5" class="content">
+      <div class="container_12">
+        <div class="grid_12">
+          <div class="slogan">
+            <h3>Связь с нами</h3>
+           
+          </div>
+        </div>
+        <div class="clear"></div>
+        
+          
+            <div class="conttext">
+               <div class="conttext1">
+                  <p>Вы можете задать свой ​​вопрос или отправить нам описание вашей проблемы или идеи , используя форму обратной связи
+                     а также используя любой из контактов.</p>
+                 </div>
+                 <div class="conttext2">
+                   <div class="col1cont"> 
+                    <p class="col1"><br><span class="titlecol1">Контактные телефоны:</span><br>+380637777777 <br><br>+380637777777 </p>
+                    </div>
+                    <div class="col2cont"> 
+                    <p class="col2"><br><span class="titlecol1">Другие контакты:</span><br>
+                        
+                       <table width="100%" height="50px">
+                            <tbody>
+                              <tr>
+                              <td>  
+                                 <img src="./art/skype.png" width="32px" height="32px">
+                                  <p><a href="#">kronetgames </a></p>
+                              </td>  
+                              <td> 
+                                <img src="./art/gmail.png" width="32px" height="32px">
+                                 <p><a href="#">kronetgames@gmail.com </a></p>
+                              </td>              
+                              <td> 
+                                <img src="./art/icq.png" width="32px" height="32px">
+                               <p><a href="#">12345678 </a></p>
+                             </td>
+                            </tr>
+                          </tbody>
+                        </table>
+
+                    </p>
+                 </div>
+            </div>
+          </div>
+          <div class="grid_5 prefix_1">
+            <div class="text1">Задать вопрос:</div>
+            <form id="form" action="send.php" method="post">
+            <div class="success_wrapper">
+            <div class="success">Контактная форма отправлена!<br>
+            <strong>Мы скоро свяжемся с вами.</strong> </div></div>
+            <fieldset>
+            <label class="name">
+            <input type="text" value="Имя:">
+            <br class="clear">
+            <span class="error error-empty">*Это не правильное имя.</span><span class="empty error-empty">*Обязательное поле.</span> </label>
+            <label class="email">
+            <input type="text" value="E-mail:">
+            <br class="clear">
+            <span class="error error-empty">*Это не правильний email адрес.</span><span class="empty error-empty">*Обязательное поле.</span> </label>
+            <label class="message">
+            <textarea>Сообщения:</textarea>
+            <br class="clear">
+            <span class="error">*Сообщение слишком короткое.</span> <span class="empty">*Обязательное поле.</span> </label>
+            <div class="clear"></div>
+            <div class="btns"><a data-type="submit" class="link1">Отправить</a>
+            <div class="clear"></div>
+            </div></fieldset></form>
+          </div>
+          <div class="clear"></div>
+        
+      </div>
+    </div>
+      <!--==============================footer=================================-->
+          <footer>
+            <div class="container_12">
+              <div class="grid_12">
+                <div class="copy" align="center" >
+                  <a onClick="goToByScroll('page1'); return false;" href="#"><img src="art/logo.png" alt="" width="200px"  class="footerimg" /><br>Kronet Games <a href="http://www.kronetgames.com" rel="nofollow " >Indie-dev studio &copy; 2014 </a>
+                </div>
+              </div>
+              <div class="clear"></div>
+            </div>
+          </footer>
+        </body>
+</html>
